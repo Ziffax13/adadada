@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallerysmall{
+            visibility: hidden;
+        }
+        .dmain{
+            display: flex;
+            border: none;
+            visibility: visible;
+        }
+        .side{
+            visibility: visible;
+        }
+        .gallery{
+            display: block;
+            visibility: visible;
+        }
+        .gallery div{
+            border: none;
+            display: flex;
+        }
+        .gallery div div{
+            border: none;
+            display: flex;
+        }
+        .list{
+            height: fit-content;
+            padding: 30px;
+            visibility: visible;
+        }
+        li{
+            list-style: none;
+        }
+        div{
+            border: 1px solid;
+            margin: 10px;
+        }
+        span{
+            margin-left: 10px;
+        }
+        input{
+        }
+        .searchbig{
+            visibility: visible;
+        }
+        .searchsmall{
+            visibility: hidden;
+        }
+        @media screen and (max-width: 1024px) {
+            .searchbig{
+            visibility: hidden;
+        }
+        .gallery div{
+            border: none;
+            display: block;
+        }
+        .gallery div div{
+            border: none;
+            display: flex;
+        }
+        .searchsmall{
+            visibility: visible;
+            height: fit-content;
+            align-self: center;
+            margin-right: 10px;
+        }
+        }
+        @media screen and (max-width: 768px) {
+            div{
+            margin: 1px;
+        }
+        .list{
+            visibility: hidden;
+            width: 0px;
+            margin: 0px;
+            padding: 0px;
+        }
+        .gallery{
+            visibility: hidden;
+            width: 0px;
+            margin: 0px;
+            padding: 0px;
+        }
+        .side{
+            visibility: hidden;
+            width: 0px;
+            margin: 0px;
+            padding: 0px;
+        }
+        .gallerysmall{
+            visibility: visible;
+        }
+        .gallerysmall div{
+            display: flex;
+            border: none;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex; border: none; margin: 0px;">
+        <div style="padding: 5px; display: flex; align-items: center; width: 80px">
+            LOGO
+        </div>
+        <input type="text" placeholder="search" style="margin-left: auto;" class="searchsmall">
+    </div>
+    <div style="display: flex; padding: 5px;">
+            <span>HOME</span>
+            <span>ABOUT</span>
+            <span>GALLERY</span>
+            <span>CONTACT</span>
+      <input type="text" placeholder="search" style="margin-left: auto;" class="searchbig">
+    </div>
+    <div class="dmain">
+        <div style="margin: 0px;">
+            <h1>Lorem Ipsum</h1> 
+            <div style="height: 300px; background-color: gray;"></div>
+            <div style="border: none;">
+                <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rutrum neque et lacus vulputate porttitor sollicitudin blandit nunc. Etiam ut dolor condimentum, consectetur nisi in, tempus dolor. Nam laoreet est tellus, a mollis metus dapibus in. Suspendisse vehicula leo augue, sagittis hendrerit lacus scelerisque aliquam. Praesent nec iaculis nisi. Nam volutpat metus vel blandit viverra. Duis et porta ante. Sed euismod lacus at vulputate interdum. Duis tincidunt porttitor arcu sodales aliquet. Integer id libero in augue sodales bibendum. Etiam cursus accumsan mi, et consectetur turpis tincidunt nec. Vestibulum placerat nisl mattis, aliquet nunc non, tempor lacus. Integer fringilla vel augue vel sodales. Aliquam a pellentesque erat. Etiam rhoncus, leo sit amet egestas posuere, ligula odio tincidunt mauris, ullamcorper rutrum sem mi at mi. Proin luctus maximus maximus.
+                    <br><br>
+                    Curabitur vehicula placerat neque ut elementum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec tincidunt metus quis lorem elementum, non condimentum eros hendrerit. In hac habitasse platea dictumst. Quisque mi lorem, gravida nec justo a, consequat elementum odio. Quisque id enim pharetra, viverra lorem a, tempor felis. Morbi eget blandit quam. Suspendisse elementum libero et metus posuere, sed suscipit dui sollicitudin. Nunc pulvinar suscipit ipsum consectetur imperdiet. Donec tincidunt at justo non hendrerit. Sed imperdiet, magna in gravida pellentesque, tortor mi bibendum turpis, sed auctor ligula lorem et tellus. Pellentesque ut feugiat lorem.
+                </span>
+            </div>
+        </div>
+      <div class="side">
+        <div class="list">
+            List
+            <li>Item 1</li>
+            <li>Item 1</li>
+            <li>Item 1</li>
+            <li>Item 1</li>
+            <li>Item 1</li>
+        </div>
+        <div class="gallery">
+            Lorem
+          <div>
+              <div style="border: none; margin: 0px; display: flex;">
+                <div style="width: 20px; height: 20px; background-color: gray;"></div>
+                <div style="width: 20px; height: 20px; background-color: gray;"></div>
+            </div>
+            <div style="border: none; margin: 0px; display: flex;">
+                <div style="width: 20px; height: 20px; background-color: gray;"></div>
+                <div style="width: 20px; height: 20px; background-color: gray;"></div>
+            </div>
+          </div>
+          <div>
+            <div style="border: none; margin: 0px; display: flex;">
+              <div style="width: 20px; height: 20px; background-color: gray;"></div>
+              <div style="width: 20px; height: 20px; background-color: gray;"></div>
+          </div>
+          <div style="border: none; margin: 0px; display: flex;">
+              <div style="width: 20px; height: 20px; background-color: gray;"></div>
+              <div style="width: 20px; height: 20px; background-color: gray;"></div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="gallerysmall">
+        Lorem
+      <div>
+            <div style="width: 20px; height: 20px; background-color: gray;"></div>
+            <div style="width: 20px; height: 20px; background-color: gray;"></div>
+            <div style="width: 20px; height: 20px; background-color: gray;"></div>
+            <div style="width: 20px; height: 20px; background-color: gray;"></div>
+            <div style="width: 20px; height: 20px; background-color: gray;"></div>
+            <div style="width: 20px; height: 20px; background-color: gray;"></div>
+            <div style="width: 20px; height: 20px; background-color: gray;"></div>
+            <div style="width: 20px; height: 20px; background-color: gray;"></div>
+      </div>
+    </div>
+        copyright 2020
+</body>
+</html>
